@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="../fontawesome/css/all.css">
+    <link rel="stylesheet" href="../css/card-detail.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/map.css">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <script>
+    function changeNum() {
+      var x = document.getElementById("anu");
+      if (x.innerHTML === "Call Agent") {
+        x.innerHTML = "+62 812-3098-7865";
+      } else {
+        x.innerHTML = "Call Agent";
+      }
+    }
+    </script>
+    <script>
+    // Initialize and add the map
+    function initMap() {
+      // The location of Jimbaran 
+      var jimbaran = {lat: -8.780582, lng: 115.179351};
+      // The map, centered at Jimbaran
+      var map = new google.maps.Map(
+          document.getElementById('map'), {zoom: 12, center: jimbaran});
+      // The marker, positioned at Uluru
+      var marker = new google.maps.Marker({position: jimbaran, map: map});
+    }
+    </script>
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAF9BOyzOCk8jVFsQ9z1qhxzt3t35z0AR4&callback=initMap">
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#">
+      <img src="../images/balihot-property.jpg" style="width:102 !important; height:52px !important;"> </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span> </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-md-auto">
+      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="#">Features</a>
+      <a class="nav-item nav-link" href="#">Pricing</a>
+      <a class="nav-item nav-link disabled" href="#">Disabled</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-5">
+  <h1 class="property-title">HIDEOUT BALI - Eco Bamboo Home</h1>
+  <a href="#" class="text-decoration-none text-secondary ft-14">
+    <i class="fal fa-map-marker-alt"></i>
+    <span class="font-weight-bold"><u>Selat, Bali, Indonesia</u></span>
+    <div class="float-right pr-3 font-weight-bold">
+      <span class="mr-4">
+        <i class="far fa-share-square"></i>
+        <u>Share</u>
+      </span>
+      <span> <i class="fal fa-heart"></i> <u>Save</u>
+      </span>
+    </div>
+  </a>
+</div>
+
+<div class="container mt-4 mb-5">
+  <div class="row">
+    <div class="col-sm-6 pt-2 pr-2 pb-2">
+      <img src="../images/prop-detail/prop1.jpg" alt="" class="img-responsive center-block img-fit image-left">
+    </div>
+    <div class="row col-sm-6 pr-0">
+      <div class="col-xs-6 p-2"><img src="../images/prop-detail/prop2.jpg" alt="" class="img-responsive img-fit img-size"></div>
+      <div class="col-xs-6 p-2"><img src="../images/prop-detail/prop3.jpg" alt="" class="img-responsive img-fit image-tp-rt img-size"></div>
+      <div class="col-xs-6 p-2"><img src="../images/prop-detail/prop4.jpg" alt="" class="img-responsive img-fit img-size"></div>
+      <div class="col-xs-6 p-2"><img src="../images/prop-detail/prop5.jpg" alt="" class="img-responsive img-fit image-tp-btm img-size">
+      </div>
+      <button type="button" class="btn show-image float-right">Show all photos</button>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-4 mb-5">
+  <div class="row property">
+    <div class="col-8">
+      <div class="property-content">
+        <div class="card border-0">
+          <div class="card-header bg-transparent">
+            <h1 class="ft-20">Entire villa hosted by Wayan</h1>
+            <span>
+              <i class="fal fa-bed-alt mr-1"></i>
+              2 bedroom
+            </span>
+            <span aria-hidden="true" class="mr-2 ml-2"> · </span>
+            <span>
+              <i class="fal fa-bath mr-1"></i>
+              1 shared bath
+            </span>
+            <span aria-hidden="true" class="mr-2 ml-2"> · </span>
+            <span>
+              <i class="fal fa-file-certificate mr-1"></i>
+              Lease Hold
+            </span>
+          </div>
+        </div>
+
+        <div class="card mt-5 shadow-sm">
+          <div class="card-body property-overview">
+            <h3 class="card-title">Property Overview</h3>
+            <ul>
+              <li>
+                <h4>Purpose:</h4>
+                <span>For Sale</span>
+              </li>
+              <li>
+                <h4>Sale price:</h4> 
+                <span>$1500</span>
+              </li>
+              <li>
+                <h4>Land area:</h4>
+                <span>1300ft2</span>
+              </li>
+              <li>
+                <h4>Area:</h4> 
+                <span>240Ft²</span>
+              </li>
+              <li>
+                <h4>Beds:</h4>
+                <span>4</span>
+              </li>
+              <li>
+                <h4>Bathrooms:</h4>
+                <span>5</span>
+              </li>
+              <li>
+                <h4>Country:</h4> 
+                <span>Croatia</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="card mt-5 shadow-sm">
+          <div class="card-body property-distance">
+            <h3 class="card-title">Distance to:</h3>
+            <ul>
+              <li>
+                <i class="fal fa-umbrella-beach mr-2"></i>
+                 <h4>Beach:</h4>
+                 <span>5 kilometer</span>
+              </li>
+              <li>
+                <i class="fal fa-plane-departure mr-2"></i>
+                 <h4>Airport:</h4>
+                 <span>10 kilometer</span>
+              </li>
+              <li>
+                <i class="fal fa-store mr-2"></i>
+                 <h4>Market:</h4>
+                 <span>2 kilometer</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card mt-5 shadow-sm">
+          <div class="card-body property-description mb-2">
+            <h3 class="card-title property-content-title">Property Description</h3>
+            <p class="card-text text-justify mt-4">
+This beautiful tropical real estate is located in a chic area of Berawa Canggu.
+This stunning villa features 4 spacious with stylish and cozy en-suite bedrooms with artistic bathrooms.
+It is furnished same as the pictures and decorated in a great taste with big space in the bedrooms and provides great and comfort.
+This property generously offers AC units , spacious living area , spacious dining area , kitchen , swimming pool , storage , water source , electricity , and parking area.
+This is a great option available for rent in the heart of Bali. Ideal to rent as a home or for bussiness.
+Located just 10 minutes away from the beach and hardly 20 minutes from the Airport.
+            </p>
+          </div>
+        </div>
+
+        <div class="card mt-5 shadow-sm">
+          <div class="card-body property-amenities">
+            <h3 class="card-title">Property Amenities</h3>
+            <ul>
+              <li>
+                <i class="fal fa-hat-chef"></i>
+                <label>
+                  <span></span>
+                  <small>Kitchen</small>
+                </label>
+              </li>
+              <li>
+                <i class="far fa-air-conditioner"></i>
+                <label>
+                  <span></span>
+                  <small>Air conditioning</small>
+                </label>
+              </li>
+              <li>
+                <i class="fal fa-wifi"></i>
+                <label>
+                  <span></span>
+                  <small>Wifi</small>
+                </label>
+              </li>
+              <li>
+                <i class="fal fa-tv"></i>
+                <label>
+                  <span></span>
+                  <small>TV</small>
+                </label>
+              </li>
+              <li>
+                <i class="fal fa-couch"></i>
+                <label>
+                  <span></span>
+                  <small>2 Couch</small>
+                </label>
+              </li>
+              <li>
+                <i class="far fa-heat"></i>
+                <label>
+                  <span></span>
+                  <small>Heating</small>
+                </label>
+              </li>
+              <li>
+                <i class="fal fa-oven"></i>
+                <label>
+                  <span></span>
+                  <small>Stove</small>
+                </label>
+              </li>
+              <li class="prop-label">
+                <i class="fal fa-refrigerator"></i>
+                <label>
+                  <span></span>
+                  <small><s>Refrigerator</s></small>
+                </label>
+              </li>
+              <li>
+                <i class="fal fa-swimming-pool"></i>
+                <label>
+                  <span></span>
+                  <small>Pool</small>
+                </label>
+              </li>
+              <li>
+                <i class="fal fa-parking-circle"></i>
+                <label>
+                  <span></span>
+                  <small>Free street parking</small>
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div class="card-footer bg-transparent border-0 mb-2 pl-5">
+            <button type="button" class="btn btn-lg show-amenities">Show all 10 amenities</button>
+          </div>
+        </div>
+
+         <!--The div element for the map -->
+         <div class="card mt-3 border-0">
+           <div class="card-body">
+             <h3 class="card-title">Property Location</h3>
+             <!--The div element for the map -->
+             <div id="map" class="mt-4"></div>
+           </div>
+         </div>
+
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="card property-inquiry text-center rounded-inquiry shadow">
+        <div class="text-center mt-4">
+          <img src="../images/prop-detail/cp1.jpeg" class="avatar" alt="...">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title mt-0">Janine Ballantyne</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Marketing</h6>
+          <button onclick="changeNum()" class="btn btn-lg bg-call btn-block mt-4">
+            <i class="fal fa-phone-alt mr-2"></i>
+            <span id="anu">
+              Call Agent 
+            </span>
+          </button>
+        </div>
+        <div class="card-footer text-muted bg-transparent">
+          <a href="#" class="btn bg-red btn-block">
+            <i class="fal fa-envelope-open mr-2"></i>
+            Send Inquiry 
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+<div class="container mt-5 mb-5">
+  <h3>Other properties for similar listings</h3>
+</div>
+
+<div class="container mt-5 mb-5">
+  <div class="row">
+    <div class="col-lg-4 col-md-6">
+      <div class="card">
+        <a href="#">
+          <img class="card-img-top img-fit" src="../images/k1.jpg" alt="Card image cap">
+        </a>
+        <div class="img-block">
+        <div class="rate-info">
+          <h5> $1500</h5>
+          <span class="for-sale">FOR SALE</span>
+        </div>
+        </div>
+        <div class="card-body">
+         <a href="#" class="card-title mb-0 h5 font-weight-bold text-dark text-decoration-none">The Buah Bali Villas</a>
+         <p class="card-text ft-12 mt-1 address">
+           <i class="fal fa-map-marker-alt"></i>
+           Seminyak, Kuta, Bali 30123.
+         </p>
+         <span class="badge bd-right font-weight-normal mr-1">
+           <i class="fal fa-vector-square mr-1"></i>
+           Area <span class="font-weight-bold">3200</span> <span>Ft²</span> &nbsp;
+         </span>
+         <span class="badge bd-right font-weight-normal mr-1">
+           <i class="far fa-bed mr-1"></i>
+           <span class="font-weight-bold">1</span> Room &nbsp;
+         </span>
+         <span class="badge bd-right font-weight-normal mr-1">
+           <i class="fad fa-sink mr-1"></i>
+           <span class="font-weight-bold">2</span> Bathroom &nbsp;
+         </span>
+         <span class="badge bd-right font-weight-normal mr-1">
+           <i class="far fa-air-conditioner mr-1"></i>
+           <span class="font-weight-bold">1</span> AC &nbsp;
+         </span>
+         <span class="badge bd-right font-weight-normal mr-1">
+           <i class="far fa-wifi mr-1"></i>
+           <span class="font-weight-bold">Free</span> Wifi &nbsp;
+         </span>
+         <span class="badge font-weight-normal">
+           <i class="far fa-swimming-pool mr-1"></i>
+           <span class="font-weight-bold">2</span> Swimming Pool &nbsp;
+         </span>
+       </div>
+       <div class="card-footer text-muted bg-transparent">
+        <div class="row ft-12">
+          <div class="col">
+            <i class="fal fa-calendar-check mr-2"></i>
+            2 Days Ago
+          </div>
+          <div class="col text-right">
+           <a href="#" class="text-decoration-none text-muted mr-1">
+             <i class="fal fa-heart"></i>
+           </a>
+           <a href="#" class="text-decoration-none text-muted">
+             <i class="fas fa-share-alt"></i>
+           </a>
+          </div>
+        </div>
+       </div>
+      </div>
+    </div><!--/col-->
+    <div class="col-lg-4 col-md-6">
+      <div class="card">
+        <a href="#">
+          <img class="card-img-top" src="../images/k2.jpg" alt="Card image cap">
+        </a>
+        <div class="img-block">
+        <div class="rate-info">
+          <h5> $1500/month</h5>
+          <span class="for-rent">FOR RENT</span>
+        </div>
+        </div>
+        <div class="card-body">
+         <a href="#" class="card-title mb-0 h5 font-weight-bold text-dark text-decoration-none">The Buah Bali Villas</a>
+         <p class="card-text ft-12 mt-1 address">
+           <i class="fal fa-map-marker-alt"></i>
+           Seminyak, Kuta, Bali 30123.
+         </p>
+         <span class="badge bd-right font-weight-normal mr-1">
+           <i class="fal fa-vector-square mr-1"></i>
+           Area <span class="font-weight-bold">3200</span> <span>Ft²</span> &nbsp;
+         </span>
+         <span class="badge bd-right font-weight-normal mr-1">
+           <i class="far fa-bed mr-1"></i>
+           <span class="font-weight-bold">1</span> Room &nbsp;
+         </span>
+         <span class="badge bd-right font-weight-normal mr-1">
+           <i class="fad fa-sink mr-1"></i>
+           <span class="font-weight-bold">2</span> Bathroom &nbsp;
+         </span>
+         <span class="badge bd-right font-weight-normal mr-1">
+           <i class="far fa-air-conditioner mr-1"></i>
+           <span class="font-weight-bold">1</span> AC &nbsp;
+         </span>
+         <span class="badge bd-right font-weight-normal mr-1">
+           <i class="far fa-wifi mr-1"></i>
+           <span class="font-weight-bold">Free</span> Wifi &nbsp;
+         </span>
+         <span class="badge font-weight-normal">
+           <i class="far fa-swimming-pool mr-1"></i>
+           <span class="font-weight-bold">2</span> Swimming Pool &nbsp;
+         </span>
+       </div>
+       <div class="card-footer text-muted bg-transparent">
+        <div class="row ft-12">
+          <div class="col">
+            <i class="fal fa-calendar-check mr-2"></i>
+            2 Days Ago
+          </div>
+          <div class="col text-right">
+           <a href="#" class="text-decoration-none text-muted mr-1">
+             <i class="fal fa-heart"></i>
+           </a>
+           <a href="#" class="text-decoration-none text-muted">
+             <i class="fas fa-share-alt"></i>
+           </a>
+          </div>
+        </div>
+       </div>
+      </div>
+    </div><!--/col-->
+    <div class="col-lg-4 col-md-6">
+      <div class="card">
+        <a href="#">
+          <img class="card-img-top" src="../images/k3.jpg" alt="Card image cap">
+        </a>
+        <div class="img-block">
+        <div class="rate-info">
+          <h5> $1500</h5>
+          <span class="for-sale">FOR SALE</span>
+        </div>
+        </div>
+        <div class="card-body">
+         <a href="#" class="card-title mb-0 h5 font-weight-bold text-dark text-decoration-none">The Buah Bali Villas</a>
+         <p class="card-text ft-12 mt-1 address">
+           <i class="fal fa-map-marker-alt"></i>
+           Seminyak, Kuta, Bali 30123.
+         </p>
+         <span class="badge bd-right font-weight-normal mr-1">
+           <i class="fal fa-vector-square mr-1"></i>
+           Area <span class="font-weight-bold">3200</span> <span>Ft²</span> &nbsp;
+         </span>
+         <span class="badge bd-right font-weight-normal mr-1">
+           <i class="far fa-bed mr-1"></i>
+           <span class="font-weight-bold">1</span> Room &nbsp;
+         </span>
+         <span class="badge bd-right font-weight-normal mr-1">
+           <i class="fad fa-sink mr-1"></i>
+           <span class="font-weight-bold">2</span> Bathroom &nbsp;
+         </span>
+         <span class="badge bd-right font-weight-normal mr-1">
+           <i class="far fa-air-conditioner mr-1"></i>
+           <span class="font-weight-bold">1</span> AC &nbsp;
+         </span>
+         <span class="badge bd-right font-weight-normal mr-1">
+           <i class="far fa-wifi mr-1"></i>
+           <span class="font-weight-bold">Free</span> Wifi &nbsp;
+         </span>
+         <span class="badge font-weight-normal">
+           <i class="far fa-swimming-pool mr-1"></i>
+           <span class="font-weight-bold">2</span> Swimming Pool &nbsp;
+         </span>
+       </div>
+       <div class="card-footer text-muted bg-transparent">
+        <div class="row ft-12">
+          <div class="col">
+            <i class="fal fa-calendar-check mr-2"></i>
+            2 Days Ago
+          </div>
+          <div class="col text-right">
+           <a href="#" class="text-decoration-none text-muted mr-1">
+             <i class="fal fa-heart"></i>
+           </a>
+           <a href="#" class="text-decoration-none text-muted">
+             <i class="fas fa-share-alt"></i>
+           </a>
+          </div>
+        </div>
+       </div>
+      </div>
+    </div><!--/col-->
+  </div>
+</div>
+
+
+</html>

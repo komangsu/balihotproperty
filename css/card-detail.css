@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+body{font-family: "Poppins";}
+.ft-14 {
+  font-size: 14px !important;
+}
+.ft-20 {
+  font-size: 20px !important;
+}
+.img-fit {
+  object-fit: cover;
+}
+/* title property */
+.property-title {
+   font-size: 2em !important;
+}
+/* property-content-detail */
+.property-content-title {
+    color: rgb(34, 34, 34) !important;
+    font-size: 22px !important;
+}
+.property-description {
+    padding: 10px 30px 10px 30px;
+}
+/* property content */
+.property-content {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100%;
+}
+.property-inquiry {
+  position: sticky;
+  top: 2%;
+}
+.property-content::-webkit-scrollbar {
+    display: none;
+}
+
+/* image */
+.img-property {
+  display: inline-block;
+  vertical-align: bottom;
+  height: 100%;
+  width: 100%;
+  min-height: 1px;
+}
+.image-left {
+  border-radius: 15px 0px 0px 15px;
+}
+.image-tp-rt {
+  border-radius: 0px 15px 0px 0px;
+}
+.image-tp-btm {
+  border-radius: 0px 0px 15px 0px;
+}
+.main {
+  margin: 0 auto -60px;
+}
+.main .img-responsive {
+  margin-bottom: 30px;
+}
+.img-size {
+  display: inline-block;
+  vertical-align: bottom;
+  height: 100%;
+  width: 100%;
+  min-height: 1px;
+}
+/* image  */
+.show-image {
+  position: absolute;
+  top: 85%;
+  left: 70%;
+  z-index: 10;
+  background: rgb(255, 255, 255) !important;
+  color: rgb(34, 34, 34) !important;
+  font-weight: 600 !important;
+  font-size: 14px;
+  padding: 7px 15px;
+  border-color: rgb(34, 34, 34) !important;
+  cursor: pointer;
+  border-radius: 5px;
+}
+/* Overview Detail*/
+.property-overview {
+    padding: 10px 30px 10px 30px;
+}
+.property-overview ul li {
+    float: left;
+    width: 33%;
+    list-style: none;
+}
+.property-overview ul li h4 {
+    color: #242526;
+    font-size: 14px;
+    display: inline-block;
+}
+.property-overview ul li span {
+    display: inline-block;
+    color: #67686c;
+    font-size: 14px;
+    padding-left: 1px;
+}
+.property-overview h3 {
+    color: rgb(34, 34, 34) !important;
+    font-size: 22px !important;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+}
+/* distance to */
+.property-distance {
+  padding: 10px 30px 10px 30px;
+}
+.property-distance ul li {
+    float: left;
+    width: 33%;
+    list-style: none;
+}
+.property-distance ul li h4 {
+    color: #242526;
+    font-size: 14px;
+    display: inline-block;
+}
+.property-distance ul li span {
+    display: inline-block;
+    color: #67686c;
+    font-size: 14px;
+    padding-left: 1px;
+}
+.property-distance h3 {
+    color: rgb(34, 34, 34) !important;
+    font-size: 22px !important;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+}
+/* AMENITIES Detail*/
+.prop-label {
+  color: #968080;
+}
+.show-amenities {
+  background: rgb(255, 255, 255) !important;
+  color: rgb(34, 34, 34) !important;
+  border-color: rgb(34, 34, 34) !important;
+  border-radius: 5px;
+}
+.property-amenities {
+    padding: 10px 30px 10px 30px;
+}
+.property-amenities ul li {
+    float: left;
+    width: 33%;
+    margin-bottom: 15px;
+    list-style: none;
+}
+.property-amenities ul li h4 {
+    color: #242526;
+    font-size: 14px;
+    display: inline-block;
+}
+.property-amenities ul li span {
+    display: inline-block;
+    color: #67686c;
+    font-size: 14px;
+    padding-left: 1px;
+}
+.property-amenities h3 {
+    color: rgb(34, 34, 34) !important;
+    font-size: 22px !important;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+}
+.avatar {
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.rounded-inquiry {
+  border-radius: 10px;
+}
+.bg-card-color {
+  background-color: #021927;
+  color: white;
+}
+.bg-red {
+  background-color: #fc384a;
+  color: white;
+}
+.bg-red:hover {
+  color: white;
+}
+.bg-red:focus {
+  color: white;
+}
+.bg-call {
+  background-color: #021927;
+  color: white;
+  border: 2px solid white;
+}
+.bg-call:hover {
+  color: white;
+}
+.bg-call:focus {
+  color: white;
+}
+@media only screen and (min-width: 1920px) {
+  .container .show-image {
+    position: absolute;
+    left: 80%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background: rgb(255, 255, 255) !important;
+    color: rgb(34, 34, 34) !important;
+    font-weight: 600 !important;
+    font-size: 14px;
+    padding: 7px 15px;
+    border-color: rgb(34, 34, 34) !important;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+}
