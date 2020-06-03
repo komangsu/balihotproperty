@@ -1,29 +1,53 @@
-.sidebar {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 100;
-    padding: 48px 0 0;
-    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+.btn-file {
+  position: relative;
+  overflow: hidden;
+  height: 80%:
 }
-.sidebar-sticky {
-    position: -webkit-sticky;
-    position: sticky;
+.btn-file input[type=file] {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: inherit;
 }
-.sidebar-sticky {
-    position: relative;
-    top: 0;
-    height: calc(100vh - 48px);
-    padding-top: .5rem;
-    overflow-x: hidden;
-    overflow-y: auto;
+.uploadpreview{
+width:134px;
+height:134px;
+display:block;
+border:1px solid #ccc;
+background-size:100% auto;
+background-repeat:no-repeat;
+background-position:center;
 }
-.main {
-    overflow-x: hidden;
-    overflow-y: scroll;
-    height: 100vh;
+.upload-wrap{
+float:left;
+margin-right:3%;
 }
-.main::-webkit-scrollbar {
-    display: none;
+
+/* Image card admin */
+.img-card-admin {
+  height: 250px;
+  object-fit: cover;
+}
+/* Image card admin */
+.btn-blueprop {
+   background-color: #021927;
+   color: white;
+}
+.btn-redprop {
+   background-color: #fc384a;
+   color: white;
+}
+.btn-blueprop:hover {
+   background-color: #021927;
+   color: white;
+}
+.btn-redprop:hover {
+   background-color: #fc384a;
+   color: white;
 }

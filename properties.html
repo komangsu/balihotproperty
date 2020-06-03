@@ -44,6 +44,7 @@
   <link rel="stylesheet" href="https://demos.creative-tim.com/argon-dashboard-pro/assets/css/argon.min.css?v=1.2.0" type="text/css">
   <!-- Google Tag Manager -->
   <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/map.css">
   <script>
     (function(w, d, s, l, i) {
       w[l] = w[l] || [];
@@ -393,113 +394,219 @@
     </div>
     <!-- Page content -->
     <div class="container-fluid mt--6">
+      <!-- Image content -->
       <div class="row">
         <div class="col-xl-12 mb-12 mb-xl-12">
           <div class="card shadow">
+            <div class="card-header">
+              <h4>Add Image Properties<small> (min. 5 photos)</small></h4>
+            </div>
             <div class="card-body">
-            <h4>Category Name</h4>
-              <form>
-                <div class="form-group">
-                  <input type="text" class="form-control">
+              <!-- file upload -->
+              <div class="row">
+                <div class="col">
+                  <div class="upload-wrap text-center">
+                    <div class="uploadpreview 01"></div>
+                    <div class="btn-file btn btn-light btn-lg mt-2 mb-5" style="line-height: 5px;">
+                      <span>
+                        <i class="fas fa-file-image"></i> Upload
+                        <input class="file-input" id="01" type="file">
+                      </span>
+                    </div><!--/file-->
+                  </div><!--/upload-wrap-->
+                  <div class="upload-wrap text-center">
+                    <div class="uploadpreview 02"></div>
+                    <div class="btn-file btn btn-light btn-lg mt-2 mb-5" style="line-height: 5px;">
+                      <span>
+                        <i class="fas fa-file-image"></i> Upload
+                        <input class="file-input" id="02" type="file">
+                      </span>
+                    </div><!--/file-->
+                  </div><!--/upload-wrap-->
+                  <div class="upload-wrap text-center">
+                    <div class="uploadpreview 03"></div>
+                    <div class="btn-file btn btn-light btn-lg mt-2 mb-5" style="line-height: 5px;">
+                      <span>
+                        <i class="fas fa-file-image"></i> Upload
+                        <input class="file-input" id="03" type="file">
+                      </span>
+                    </div><!--/file-->
+                  </div><!--/upload-wrap-->
+                  <div class="upload-wrap text-center">
+                    <div class="uploadpreview 04"></div>
+                    <div class="btn-file btn btn-light btn-lg mt-2 mb-5" style="line-height: 5px;">
+                      <span>
+                        <i class="fas fa-file-image"></i> Upload
+                        <input class="file-input" id="04" type="file">
+                      </span>
+                    </div><!--/file-->
+                  </div><!--/upload-wrap-->
+                  <div class="upload-wrap text-center">
+                    <div class="uploadpreview 05"></div>
+                    <div class="btn-file btn btn-light btn-lg mt-2 mb-5" style="line-height: 5px;">
+                      <span>
+                        <i class="fas fa-file-image"></i> Upload
+                        <input class="file-input" id="05" type="file">
+                      </span>
+                    </div><!--/file-->
+                  </div><!--/upload-wrap-->
                 </div>
-                <button type="submit" class="btn btn-redprop">Save Categories</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Image content -->
+
+      <!-- content -->
+      <div class="row">
+        <div class="col-xl-12 mb-12 mb-xl-12">
+          <div class="card shadow">
+            <div class="card-header">
+              <h4>Add Properties Information</h4>
+            </div>
+            <div class="card-body">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label>Name</label>
+                    <input type="text" class="form-control" placeholder="Name">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label>Type</label>
+                    <input type="text" class="form-control" placeholder="Apartment, studio, or floor">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label>Status</label>
+                    <select id="inputState" class="form-control">
+                      <optgroup label="FOR SALE">
+                        <option>Free Hold</option>
+                        <option>Lease Hold</option>
+                      </optgroup>
+                      <optgroup label="FOR RENT">
+                        <option>Short Term</option>
+                        <option>Long Term</option>
+                      </optgroup>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label>Price</label>
+                    <div class="input-group mb-2">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">$</div>
+                      </div>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>Description</label>
+                  <textarea class="form-control" rows="3"></textarea>
+                </div>
               </form>
             </div>
           </div>
         </div>
-        <div class="col-xl-3 col-lg-6 mb-5">
-          <div class="card shadow text-center">
-            <div class="card-body pt-3 pr-0 pb-3 pl-0">
-              <h4 class="card-title h3 mb-2">Villa</h4>
-              <button type="submit" class="btn btn-blueprop btn-sm mr-1" data-toggle="modal" data-target="#c1">Edit</button>
-              <!-- Modal -->
-              <div class="modal fade" id="c1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Edit Properties</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      <input type="text" class="form-control" value="Villa">
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-primary">Save changes</button>
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <button type="submit" class="btn btn-redprop btn-sm">Delete</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-3 col-lg-6 mb-5">
-          <div class="card shadow text-center">
-            <div class="card-body pt-3 pr-0 pb-3 pl-0">
-              <h4 class="card-title h3 mb-2">Land</h4>
-              <button type="submit" class="btn btn-blueprop btn-sm mr-1" data-toggle="modal" data-target="#c2">Edit</button>
-              <!-- Modal -->
-              <div class="modal fade" id="c2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Edit Properties</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      <input type="text" class="form-control" value="Land">
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-primary">Save changes</button>
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <button type="submit" class="btn btn-redprop btn-sm">Delete</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-3 col-lg-6 mb-5">
-          <div class="card shadow text-center">
-            <div class="card-body pt-3 pr-0 pb-3 pl-0">
-              <h4 class="card-title h3 mb-2">Business</h4>
-              <button type="submit" class="btn btn-blueprop btn-sm mr-1" data-toggle="modal" data-target="#c3">Edit</button>
-              <!-- Modal -->
-              <div class="modal fade" id="c3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Edit Properties</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      <input type="text" class="form-control" value="Business">
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-primary">Save changes</button>
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <button type="submit" class="btn btn-redprop btn-sm">Delete</button>
-            </div>
-          </div>
-        </div>
-        <!-- col create category -->
       </div>
+      <!-- content -->
+
+      <!-- content -->
+      <div class="row">
+        <div class="col-xl-12 mb-12 mb-xl-12">
+          <div class="card shadow">
+            <div class="card-header">
+              <h4>Add Properties Building Information</h4>
+            </div>
+            <div class="card-body">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label>Bedroom</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label>Bathroom</label>
+                    <input type="text" class="form-control">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label>Building Size</label>
+                    <input type="text" class="form-control" placeholder="1200 ft">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label>Land Size</label>
+                    <input type="text" class="form-control" placeholder="200 are">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-4">
+                    <label>Created-at</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label>Updated-at</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="inputState">Periods</label>
+                    <select id="inputState" class="form-control">
+                      <option selected>Choose...</option>
+                      <option>Annually</option>
+                      <option>Monthly</option>
+                      <option>Daily</option>
+                    </select>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- content -->
+
+      <!-- content -->
+      <div class="row">
+        <div class="col-xl-12 mb-12 mb-xl-12">
+          <div class="card shadow">
+            <div class="card-header">
+              <h4>Add Location Properties</h4>
+            </div>
+            <div class="card-body">
+              <form>
+                <div class="form-group">
+                  <label>Location</label>
+                  <input type="text" class="form-control" placeholder="1234 Main St">
+                </div>
+              </form>
+              <!--The div element for the map -->
+              <div id="map" class="mt-4"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-redprop mb-4">Save Properties</button>
+      <!-- content -->
 
     </div>
   </div>
   <!-- Argon Scripts -->
+    <script>
+    // Initialize and add the map
+    function initMap() {
+      // The location of Jimbaran 
+      var jimbaran = {lat: -8.780582, lng: 115.179351};
+      // The map, centered at Jimbaran
+      var map = new google.maps.Map(
+          document.getElementById('map'), {zoom: 12, center: jimbaran});
+      // The marker, positioned at Uluru
+      var marker = new google.maps.Marker({position: jimbaran, map: map});
+    }
+    </script>
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAF9BOyzOCk8jVFsQ9z1qhxzt3t35z0AR4&callback=initMap">
+    </script>
   <!-- Core -->
   <script src="https://demos.creative-tim.com/argon-dashboard-pro/assets/vendor/jquery/dist/jquery.min.js"></script>
   <script src="https://demos.creative-tim.com/argon-dashboard-pro/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
