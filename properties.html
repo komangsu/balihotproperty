@@ -45,6 +45,7 @@
   <!-- Google Tag Manager -->
   <link rel="stylesheet" href="css/dashboard.css">
   <link rel="stylesheet" href="css/map.css">
+  <link rel="stylesheet" href="fontawesome/css/all.css">
   <script>
     (function(w, d, s, l, i) {
       w[l] = w[l] || [];
@@ -392,8 +393,26 @@
         </div>
       </div>
     </div>
+
     <!-- Page content -->
     <div class="container-fluid mt--6">
+    <!-- nav tabs -->
+    <div class="container mb-5">
+      <div class="tab-line tab-border">
+        <ul class="nav nav-tabs justify-content-center font-weight-bold">
+          <li class="nav-item tab-active">
+            <a class="nav-link active" href="#">Land</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sale</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Rent</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- nav tabs -->
       <!-- Image content -->
       <div class="row">
         <div class="col-xl-12 mb-12 mb-xl-12">
@@ -452,6 +471,7 @@
                   </div><!--/upload-wrap-->
                 </div>
               </div>
+                <button type="submit" class="btn btn-redprop mb-4">Save Image</button>
             </div>
           </div>
         </div>
@@ -470,12 +490,16 @@
                 <div class="form-row">
                   <div class="form-group col-md-6">
                     <label>Name</label>
-                    <input type="text" class="form-control" placeholder="Name">
+                    <input type="text" class="form-control is-invalid" placeholder="Name">
+                    <div class="invalid-feedback">the field must be fill</div>
                   </div>
                   <div class="form-group col-md-6">
                     <label>Type</label>
-                    <input type="text" class="form-control" placeholder="Apartment, studio, or floor">
+                    <input type="text" class="form-control is-invalid" placeholder="Apartment, studio, or floor">
+                    <div class="invalid-feedback">the field must be fill</div>
                   </div>
+                </div>
+                <div class="form-row">
                   <div class="form-group col-md-6">
                     <label>Status</label>
                     <select id="inputState" class="form-control">
@@ -491,11 +515,14 @@
                   </div>
                   <div class="form-group col-md-6">
                     <label>Price</label>
-                    <div class="input-group mb-2">
+                    <div class="input-group mb-2 input-group-alternative">
                       <div class="input-group-prepend">
                         <div class="input-group-text">$</div>
                       </div>
                       <input type="text" class="form-control">
+                      <div class="input-group-append">
+                        <span class="input-group-text">.00</span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -503,6 +530,39 @@
                   <label>Description</label>
                   <textarea class="form-control" rows="3"></textarea>
                 </div>
+                <button type="submit" class="btn btn-redprop mb-4">Save Properties</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- content -->
+      <!-- content -->
+      <div class="row">
+        <div class="col-xl-12 mb-12 mb-xl-12">
+          <div class="card shadow">
+            <div class="card-header">
+              <h4>Add Closest Distance to</h4>
+            </div>
+            <div class="card-body">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label>Place Name</label>
+                    <input type="text" class="form-control is-invalid" placeholder="Name">
+                    <div class="invalid-feedback">the field must be fill</div>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label>Distance</label>
+                    <div class="input-group mb-2 input-group-alternative">
+                      <input type="number" class="form-control is-invalid" min="1" max="1500">
+                      <div class="input-group-append">
+                        <span class="input-group-text">km</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-redprop mb-4">Save Distance</button>
               </form>
             </div>
           </div>
@@ -521,34 +581,6 @@
               <form>
                 <div class="form-row">
                   <div class="form-group col-md-6">
-                    <label>Bedroom</label>
-                    <input type="text" class="form-control">
-                  </div>
-                  <div class="form-group col-md-6">
-                    <label>Bathroom</label>
-                    <input type="text" class="form-control">
-                  </div>
-                </div>
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label>Building Size</label>
-                    <input type="text" class="form-control" placeholder="1200 ft">
-                  </div>
-                  <div class="form-group col-md-6">
-                    <label>Land Size</label>
-                    <input type="text" class="form-control" placeholder="200 are">
-                  </div>
-                </div>
-                <div class="form-row">
-                  <div class="form-group col-md-4">
-                    <label>Created-at</label>
-                    <input type="text" class="form-control">
-                  </div>
-                  <div class="form-group col-md-4">
-                    <label>Updated-at</label>
-                    <input type="text" class="form-control">
-                  </div>
-                  <div class="form-group col-md-4">
                     <label for="inputState">Periods</label>
                     <select id="inputState" class="form-control">
                       <option selected>Choose...</option>
@@ -557,7 +589,38 @@
                       <option>Daily</option>
                     </select>
                   </div>
+                  <div class="form-group col-md-3">
+                    <label>Bedroom</label>
+                    <input type="number" class="form-control is-invalid" id="quantity" name="quantity" min="1" max="10">
+                    <div class="invalid-feedback">the field must be fill</div>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label>Bathroom</label>
+                    <input type="number" class="form-control is-invalid" id="quantity" name="quantity" min="1" max="10">
+                    <div class="invalid-feedback">the field must be fill</div>
+                  </div>
                 </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label>Building Size</label>
+                    <div class="input-group mb-3">
+                      <input type="number" class="form-control" id="quantity" name="quantity" min="100" max="1500">
+                      <div class="input-group-append">
+                        <span class="input-group-text">ft²</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label>Land Size</label>
+                    <div class="input-group mb-3">
+                      <input type="number" class="form-control" id="quantity" name="quantity" min="100" max="1500">
+                      <div class="input-group-append">
+                        <span class="input-group-text">are</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-redprop mb-4">Save Properties</button>
               </form>
             </div>
           </div>
@@ -576,7 +639,12 @@
               <form>
                 <div class="form-group">
                   <label>Location</label>
-                  <input type="text" class="form-control" placeholder="1234 Main St">
+                  <div class="input-group mb-2 input-group-alternative">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text"><i class="fal fa-map-marker-alt"></i></div>
+                    </div>
+                    <input type="text" class="form-control" placeholder="1234 Main St">
+                  </div>
                 </div>
               </form>
               <!--The div element for the map -->

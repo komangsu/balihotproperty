@@ -44,6 +44,7 @@
   <link rel="stylesheet" href="https://demos.creative-tim.com/argon-dashboard-pro/assets/css/argon.min.css?v=1.2.0" type="text/css">
   <!-- Google Tag Manager -->
   <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="fontawesome/css/all.css">
   <script>
     (function(w, d, s, l, i) {
       w[l] = w[l] || [];
@@ -369,7 +370,7 @@
     </nav>
     <!-- Header -->
     <!-- Header -->
-    <div class="header pb-6">
+    <div class="header pb-2">
       <div class="container-fluid">
         <div class="header-body">
           <div class="row align-items-center py-4">
@@ -392,7 +393,7 @@
       </div>
     </div>
     <!-- Page content -->
-    <div class="container-fluid mt--6">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-xl-12 mb-12 mb-xl-12">
           <div class="card shadow">
@@ -403,20 +404,84 @@
               <form>
                 <div class="form-group">
                   <label>Amenities Name</label>
-                  <input type="text" class="form-control">
+                  <input type="text" class="form-control is-invalid">
+                  <div class="invalid-feedback">the field must be fill</div>
                 </div>
                 <div class="form-group">
-                  <label>Amenities Icon Link</label>
-                  <input type="text" class="form-control">
+                  <label>
+                    Icon Fontawesome Name
+                    <!-- Button trigger modal -->
+                    <span class="btn btn-link text-decoration-none p-0" data-toggle="modal" data-target="#exampleModal">
+                      <i class="fal fa-map-marker-question"></i>
+                    </span>
+                  
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">How to Adding Icon Fontawesome</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <ol>
+                              <li>Go to <a href="https://fontawesome.com/icons?d=gallery">Fontawesome</a> and search the icon.</li>
+                              <li>Click the icon</li>
+                              <li>Copy text inside the html, examples: "<b>fal fa-bed-alt</b>"</li>
+                            </ol>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </label>
+                  <input type="text" class="form-control is-invalid" placeholder="fal fa-bed-alt">
+                  <div class="invalid-feedback">the field must be fill</div>
                 </div>
                 <button type="submit" class="btn btn-redprop">Save Amenities</button>
               </form>
             </div>
           </div>
         </div>
-        <div class="col-xl-3 col-lg-6 mb-5">
-        </div>
         <!-- col amenities -->
+        <div class="col-xl-3 col-lg-6 mb-5">
+          <div class="card shadow text-center">
+            <div class="card-body pt-3 pr-0 pb-3 pl-0">
+              <h4 class="card-title h3 mb-2">
+                <i class="fal fa-bed-alt mr-2"></i>
+                Bedroom
+              </h4>
+              <button type="submit" class="btn btn-blueprop btn-sm mr-1" data-toggle="modal" data-target="#c1">Edit</button>
+              <!-- Modal -->
+              <div class="modal fade" id="c1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Edit Properties</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body pb-0">
+                      <div class="form-group">
+                        <input type="text" class="form-control mb-2" value="Villa">
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="form-control" value="fal fa-bed-alt">
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-redprop btn-sm">Delete</button>
+            </div>
+          </div>
+        </div>
 
       </div>
 

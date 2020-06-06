@@ -51,3 +51,7 @@ margin-right:3%;
    background-color: #fc384a;
    color: white;
 }
+/* nav tabs in properties */
+.tab-line > .nav-tabs > .nav-item > a.active {border-bottom: 2px solid #32465B; border-top: none; border-left: none; border-right: none;}
+.tab-border > .nav-tabs {border: none;}
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {border-color: transparent;}
