@@ -400,19 +400,26 @@
               <h4>Category Region</h4>
             </div>
             <div class="card-body">
+              <!-- file upload -->
+              <div class="row">
+                <div class="col">
+                  <div class="upload-wrap text-center">
+                    <label><small>2000 x 3000 pixels</small></label>
+                    <div class="uploadpreview 01"></div>
+                    <div class="btn-file btn btn-light btn-lg mt-2 mb-5" style="line-height: 5px;">
+                      <span>
+                        <i class="fas fa-file-image"></i> Upload
+                        <input class="file-input" id="01" type="file">
+                      </span>
+                    </div><!--/file-->
+                  </div><!--/upload-wrap-->
+                </div>
+              </div>
               <form>
                 <div class="form-group">
                   <label>Region Name</label>
                   <input type="text" class="form-control is-invalid">
                   <div class="invalid-feedback">the field must be fill</div>
-                </div>
-                <div class="form-row">
-                <div class="input-group mb-3 col-md-4">
-                  <div class="custom-file">
-                    <input type="file" id="inputGroupFile01">
-                    <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-                  </div>
-                </div>
                 </div>
                 <button type="submit" class="btn btn-redprop">Save Region</button>
               </form>
