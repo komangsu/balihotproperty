@@ -98,20 +98,20 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="dashboard.html" role="button" aria-expanded="false" aria-controls="navbar-components">
-                <i class="ni ni-ui-04 text-info"></i>
-                <span class="nav-link-text">Add Category</span>
-              </a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="properties.html" role="button" aria-expanded="false" aria-controls="navbar-components">
                 <i class="ni ni-ui-04 text-info"></i>
                 <span class="nav-link-text">Properties</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="type.html" role="button" aria-expanded="false" aria-controls="navbar-forms">
-                <i class="ni ni-single-copy-04 text-pink"></i>
+              <a class="nav-link" href="dashboard.html" role="button" aria-expanded="false" aria-controls="navbar-components">
+                <i class="ni ni-ui-04 text-info"></i>
+                <span class="nav-link-text">Category</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="type.html" role="button" aria-expanded="false" aria-controls="navbar-components">
+                <i class="ni ni-ui-04 text-info"></i>
                 <span class="nav-link-text">Type</span>
               </a>
             </li>
@@ -396,82 +396,25 @@
 
     <!-- Page content -->
     <div class="container-fluid mt--6">
-    <!-- nav tabs -->
-    <div class="container mb-5">
-      <div class="tab-line tab-border">
-        <ul class="nav nav-tabs justify-content-center font-weight-bold">
-          <li class="nav-item tab-active">
-            <a class="nav-link active" href="#">Land</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Sale</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Rent</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <!-- nav tabs -->
       <!-- Image content -->
       <div class="row">
         <div class="col-xl-12 mb-12 mb-xl-12">
           <div class="card shadow">
             <div class="card-header">
-              <h4>Add Image Properties<small> (min. 5 photos)</small></h4>
+              <h4>Add Image Properties <small> (min. 5 photos)</small></h4>
             </div>
             <div class="card-body">
               <!-- file upload -->
               <div class="row">
-                <div class="col">
-                  <div class="upload-wrap text-center">
-                    <div class="uploadpreview 01"></div>
-                    <div class="btn-file btn btn-light btn-lg mt-2 mb-5" style="line-height: 5px;">
-                      <span>
-                        <i class="fas fa-file-image"></i> Upload
-                        <input class="file-input" id="01" type="file">
-                      </span>
-                    </div><!--/file-->
-                  </div><!--/upload-wrap-->
-                  <div class="upload-wrap text-center">
-                    <div class="uploadpreview 02"></div>
-                    <div class="btn-file btn btn-light btn-lg mt-2 mb-5" style="line-height: 5px;">
-                      <span>
-                        <i class="fas fa-file-image"></i> Upload
-                        <input class="file-input" id="02" type="file">
-                      </span>
-                    </div><!--/file-->
-                  </div><!--/upload-wrap-->
-                  <div class="upload-wrap text-center">
-                    <div class="uploadpreview 03"></div>
-                    <div class="btn-file btn btn-light btn-lg mt-2 mb-5" style="line-height: 5px;">
-                      <span>
-                        <i class="fas fa-file-image"></i> Upload
-                        <input class="file-input" id="03" type="file">
-                      </span>
-                    </div><!--/file-->
-                  </div><!--/upload-wrap-->
-                  <div class="upload-wrap text-center">
-                    <div class="uploadpreview 04"></div>
-                    <div class="btn-file btn btn-light btn-lg mt-2 mb-5" style="line-height: 5px;">
-                      <span>
-                        <i class="fas fa-file-image"></i> Upload
-                        <input class="file-input" id="04" type="file">
-                      </span>
-                    </div><!--/file-->
-                  </div><!--/upload-wrap-->
-                  <div class="upload-wrap text-center">
-                    <div class="uploadpreview 05"></div>
-                    <div class="btn-file btn btn-light btn-lg mt-2 mb-5" style="line-height: 5px;">
-                      <span>
-                        <i class="fas fa-file-image"></i> Upload
-                        <input class="file-input" id="05" type="file">
-                      </span>
-                    </div><!--/file-->
-                  </div><!--/upload-wrap-->
-                </div>
-              </div>
-                <button type="submit" class="btn btn-redprop mb-4">Save Image</button>
+                <div class="col-md-2 imgUp">
+                  <div class="imagePreview"></div>
+                    <label class="btn btn-upload">
+                     Upload<input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
+                      </label>
+                </div><!-- col-2 -->
+                <i class="fa fa-plus imgAdd"></i>
+               </div><!-- row -->
+              <!-- file upload -->
             </div>
           </div>
         </div>
@@ -494,37 +437,67 @@
                     <div class="invalid-feedback">the field must be fill</div>
                   </div>
                   <div class="form-group col-md-6">
-                    <label>Type</label>
-                    <input type="text" class="form-control is-invalid" placeholder="Apartment, studio, or floor">
-                    <div class="invalid-feedback">the field must be fill</div>
+                    <label>Category</label>
+                    <select id="inputState" class="form-control">
+                      <option selected>Choose Category...</option>
+                      <option>Villa</option>
+                      <option>Land</option>
+                      </optgroup>
+                    </select>
                   </div>
                 </div>
                 <div class="form-row">
                   <div class="form-group col-md-6">
-                    <label>Status</label>
+                    <label>For</label>
                     <select id="inputState" class="form-control">
-                      <optgroup label="FOR SALE">
-                        <option>Free Hold</option>
-                        <option>Lease Hold</option>
-                      </optgroup>
-                      <optgroup label="FOR RENT">
-                        <option>Short Term</option>
-                        <option>Long Term</option>
+                      <option selected>Choose...</option>
+                      <option>For Sale</option>
+                      <option>For Rent</option>
                       </optgroup>
                     </select>
                   </div>
                   <div class="form-group col-md-6">
+                    <label for="inputState">Periods</label>
+                    <select id="inputState" class="form-control">
+                      <option selected>Choose...</option>
+                      <option>Annually</option>
+                      <option>Monthly</option>
+                      <option>Daily</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-4">
+                    <label>Type</label>
+                    <select id="inputState" class="form-control">
+                      <option selected>Choose...</option>
+                      <option>Modern Style</option>
+                      <option>Balinese</option>
+                      <option>Luxury</option>
+                      </optgroup>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label>Status</label>
+                    <select id="inputState" class="form-control">
+                      <option selected>Choose Status...</option>
+                      <option>Short Term</option>
+                      <option>Long Term</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-4">
                     <label>Price</label>
                     <div class="input-group mb-2 input-group-alternative">
                       <div class="input-group-prepend">
                         <div class="input-group-text">$</div>
                       </div>
                       <input type="text" class="form-control">
-                      <div class="input-group-append">
-                        <span class="input-group-text">.00</span>
-                      </div>
                     </div>
                   </div>
+                </div>
+                <div class="form-group">
+                  <label>Facilities</label>
+                  <textarea class="form-control" rows="3" placeholder="search and tag"></textarea>
                 </div>
                 <div class="form-group">
                   <label>Description</label>
@@ -537,7 +510,7 @@
         </div>
       </div>
       <!-- content -->
-      <!-- content -->
+      <!-- content
       <div class="row">
         <div class="col-xl-12 mb-12 mb-xl-12">
           <div class="card shadow">
@@ -568,7 +541,7 @@
           </div>
         </div>
       </div>
-      <!-- content -->
+      -->
 
       <!-- content -->
       <div class="row">
@@ -581,20 +554,11 @@
               <form>
                 <div class="form-row">
                   <div class="form-group col-md-6">
-                    <label for="inputState">Periods</label>
-                    <select id="inputState" class="form-control">
-                      <option selected>Choose...</option>
-                      <option>Annually</option>
-                      <option>Monthly</option>
-                      <option>Daily</option>
-                    </select>
-                  </div>
-                  <div class="form-group col-md-3">
                     <label>Bedroom</label>
                     <input type="number" class="form-control is-invalid" id="quantity" name="quantity" min="1" max="10">
                     <div class="invalid-feedback">the field must be fill</div>
                   </div>
-                  <div class="form-group col-md-3">
+                  <div class="form-group col-md-6">
                     <label>Bathroom</label>
                     <input type="number" class="form-control is-invalid" id="quantity" name="quantity" min="1" max="10">
                     <div class="invalid-feedback">the field must be fill</div>
@@ -606,7 +570,7 @@
                     <div class="input-group mb-3">
                       <input type="number" class="form-control" id="quantity" name="quantity" min="100" max="1500">
                       <div class="input-group-append">
-                        <span class="input-group-text">ft²</span>
+                        <span class="input-group-text">m²</span>
                       </div>
                     </div>
                   </div>
@@ -731,6 +695,33 @@
 });
 </script>
   <!--/upload-image-->
+  <script>
+    $(".imgAdd").click(function(){
+  $(this).closest(".row").find('.imgAdd').before('<div class="col-md-2 imgUp"><div class="imagePreview"></div><label class="btn btn-upload">Upload<input type="file" class="uploadFile img" value="Upload Photo" style="width:0px;height:0px;overflow:hidden;"></label><i class="fa fa-times del"></i></div>');
+});
+$(document).on("click", "i.del" , function() {
+	$(this).parent().remove();
+});
+$(function() {
+    $(document).on("change",".uploadFile", function()
+    {
+    		var uploadFile = $(this);
+        var files = !!this.files ? this.files : [];
+        if (!files.length || !window.FileReader) return; // no file selected, or no FileReader support
+
+        if (/^image/.test( files[0].type)){ // only image file
+            var reader = new FileReader(); // instance of the FileReader
+            reader.readAsDataURL(files[0]); // read the local file
+
+            reader.onloadend = function(){ // set image data as background of div
+                //alert(uploadFile.closest(".upimage").find('.imagePreview').length);
+uploadFile.closest(".imgUp").find('.imagePreview').css("background-image", "url("+this.result+")");
+            }
+        }
+
+    });
+});
+  </script>
   <noscript>
     <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=111649226022273&amp;ev=PageView&amp;noscript=1" />
   </noscript>

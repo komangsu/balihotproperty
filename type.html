@@ -96,20 +96,20 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="dashboard.html" role="button" aria-expanded="false" aria-controls="navbar-components">
-                <i class="ni ni-ui-04 text-info"></i>
-                <span class="nav-link-text">Add Category</span>
-              </a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="properties.html" role="button" aria-expanded="false" aria-controls="navbar-components">
                 <i class="ni ni-ui-04 text-info"></i>
                 <span class="nav-link-text">Properties</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="type.html" role="button" aria-expanded="false" aria-controls="navbar-forms">
-                <i class="ni ni-single-copy-04 text-pink"></i>
+              <a class="nav-link" href="dashboard.html" role="button" aria-expanded="false" aria-controls="navbar-components">
+                <i class="ni ni-ui-04 text-info"></i>
+                <span class="nav-link-text">Category</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="type.html" role="button" aria-expanded="false" aria-controls="navbar-components">
+                <i class="ni ni-ui-04 text-info"></i>
                 <span class="nav-link-text">Type</span>
               </a>
             </li>
@@ -397,9 +397,16 @@
         <div class="col-xl-12 mb-12 mb-xl-12">
           <div class="card shadow">
             <div class="card-body">
-            <h4>Type Properties</h4>
+            <h4>Category</h4>
               <form>
                 <div class="form-group">
+                  <select id="inputState" class="form-control">
+                    <option>Villa</option>
+                    <option>Land</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                <h4>Name</h4>
                   <input type="text" class="form-control is-invalid">
                   <div class="invalid-feedback">the field must be fill</div>
                 </div>
@@ -411,7 +418,8 @@
         <div class="col-xl-3 col-lg-6 mb-5">
           <div class="card shadow text-center">
             <div class="card-body pt-3 pr-0 pb-3 pl-0">
-              <h4 class="card-title h3 mb-2">Modern</h4>
+              <h4 class="card-title h3 mb-0">Modern Style</h4>
+              <h5 class="mb-2">Villa</h5>
               <button type="submit" class="btn btn-blueprop btn-sm mr-1" data-toggle="modal" data-target="#exampleModal">Edit</button>
               <!-- Modal -->
               <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -424,7 +432,15 @@
                       </button>
                     </div>
                     <div class="modal-body">
-                      <input type="text" class="form-control" value="Modern">
+                      <div class="form-group">
+                        <select id="inputState" class="form-control">
+                          <option>Villa</option>
+                          <option>Land</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="form-control" value="Modern Style">
+                      </div>
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-primary">Save changes</button>
@@ -440,16 +456,8 @@
         <div class="col-xl-3 col-lg-6 mb-5">
           <div class="card shadow text-center">
             <div class="card-body pt-3 pr-0 pb-3 pl-0">
-              <h4 class="card-title h3 mb-2">Balinese</h4>
-              <button type="submit" class="btn btn-blueprop btn-sm mr-1">Edit</button>
-              <button type="submit" class="btn btn-redprop btn-sm">Delete</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-3 col-lg-6 mb-5">
-          <div class="card shadow text-center">
-            <div class="card-body pt-3 pr-0 pb-3 pl-0">
-              <h4 class="card-title h3 mb-2">Luxury</h4>
+              <h4 class="card-title h3 mb-0">Residental</h4>
+              <h5 class="mb-2">Land</h5>
               <button type="submit" class="btn btn-blueprop btn-sm mr-1">Edit</button>
               <button type="submit" class="btn btn-redprop btn-sm">Delete</button>
             </div>
