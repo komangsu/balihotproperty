@@ -222,8 +222,13 @@ body{font-family: "Poppins";}
   }
 }
 
-/* area information */
-.h-100 {
-  width: 730px !important;
-  height: 516px !important;
-}
+/* mobile */
+@media only screen and (max-width: 600px) {
+.m-ft-16 {font-size: 16px !important;}
+.m-ft-13 {font-size: 13px !important;}
+.m-pl-0 {padding-left: 0px !important;}
+.m-pr-0 {padding-right: 0px !important;}
+.m-ptitle {font-size: 1.5em !important;}
+.m-border-0 {border: 0!important;}
+.m-mt-0 {margin-top: 0rem!important;}
+  }

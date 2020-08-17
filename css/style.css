@@ -2,6 +2,27 @@
 .tab-line > .nav-tabs > .nav-item > a.active {border-bottom: 2px solid #32465B; border-top: none; border-left: none; border-right: none;}
 .tab-border > .nav-tabs {border: none;}
 .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {border-color: transparent;}
+
+/* card */
+.fs-12 {
+    font-size: 12px !important;
+}
+
+.text-grey {
+    color: #6c757d!important;
+}
+.fs-20 {
+    font-size: 20px !important;
+}
+
+.lh-1 {
+    line-height: 1.1;
+}
+.hov_pointer {
+    cursor: pointer;
+}
+/* card */
+
 /* Card Label */
 .rate-info {
     float: left;
@@ -50,18 +71,48 @@
     top: 5px;
 }
 .card .img-block span, .map-box .rate-info > span {
+  position: absolute;
+    bottom: 240px !important;
+    right: 8px;
     color: #fff;
     text-transform: uppercase;
     font-size: 12px;
-    background: rgba(145, 147, 152, 0.7);
-    border-radius: 50px;
+    background: rgba(145,147,152,0.7);
+    border-radius: 0px;
     padding: 5px 13px;
     float: right;
-    /* margin-right: 24px; */
+}
+.card .img-block span.monthly, .map-box .rate-info > span.monthly {
+  position: initial;
+    color: #fff;
+    top: 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    background: rgba(145,147,152,0.7);
+    border-radius: 0px;
+    padding: 5px 13px;
+    float: right;
     margin-top: 2px;
+    cursor: pointer;
+}
+.card .img-block span.years, .map-box .rate-info > span.years {
+  position: initial;
+    color: #fff;
+    top: 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    background: rgba(145,147,152,0.7);
+    border-radius: 0px;
+    padding: 5px 13px;
+    float: right;
+    margin-top: 2px;
+    cursor: pointer;
+}
+.card .img-block span.years, .map-box .rate-info > span.years {
+      background: #551a8b;
 }
 .card .img-block span.for-sale, .map-box .rate-info > span.for-sale {
-    background: #fc384a;
+      background: #551a8b;
 }
 .card .img-block span.for-rent, .map-box .rate-info > span.for-rent {
     background: #1778F2;
@@ -397,4 +448,15 @@ ol {
 }
 .grid-custom .img-responsive {
   margin-bottom: 30px;
+}
+
+.site-footer {
+  padding: 45px 15px 15px 15px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #222222;
+}
+
+.border-top {
+    border-top: 1px solid #dee2e6!important;
 }
