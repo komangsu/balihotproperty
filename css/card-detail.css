@@ -227,3 +227,33 @@ body{font-family: "Poppins";}
   width: 730px !important;
   height: 516px !important;
 }
+/* news letter */
+.w-720 {
+  width: 730px;
+  height: 336px;
+}
+.hr-news {
+  border-top: 5px solid rgba(252, 56, 74, 1);
+}
+.hr-news-img {
+  border-top: 5px solid rgba(252, 56, 74, 1);
+}
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+  .mt-5-s {
+    margin-top: 3rem!important;
+  }
+}
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+  .pl-0-s {
+    padding-left: 0!important;
+  }
+  .mt-4-s {
+    margin-top: 1.5rem!important;
+  }
+}
+.img-news {
+  background-image: url("https://res.akamaized.net/domain/image/upload/v1587624364/hero-news_ut5xmi.jpg")
+}
+
